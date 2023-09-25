@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page {
+  display: grid;
+}
+
+.navbar {
+  display: grid;
+  grid-template-rows: 4;
+  grid-template-columns: 4;
+}
