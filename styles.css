@@ -88,7 +88,7 @@ button {
 .navbar {
   display: grid;
   width: auto;
-  height: 30px;
+  height: 68px;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 1fr);
   background-color: #ebebeb;
@@ -100,7 +100,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px grey;
+  /* border: solid 1px grey; */
   text-decoration: none;
   font-family: "Fira Sans", sans-serif;
   font-size: 0.75rem;
@@ -137,6 +137,30 @@ a {
   height: 113px;
   font-size: 0.8rem;
   font-family: "Fira Sans", sans-serif;
+}
+
+#how-item-1 {
+  background: #c7ddea;
+}
+
+#how-item-2 {
+  background: #ffffff;
+}
+
+#how-item-3 {
+  background: #ebebeb;
+}
+
+#how-item-4 {
+  background: #ffffff;
+}
+
+#how-item-5 {
+  background: #f17949;
+}
+
+#how-item-6 {
+  background: #ffffff;
 }
 
 /* FOOTER */
