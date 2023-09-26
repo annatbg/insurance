@@ -3,29 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Fira+Sans|Frank+Ruhl+Libre"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Insurance</title>
   </head>
   <body>
     <!--LANDING PAGE / GRID 1-->
-    <section class="landing-page">
-      <article>blue</article>
 
-      <article>orange</article>
-      <article>yellow</article>
-    </section>
+    <header class="header-landing">
+      <!-- 1 -->
+      <article class="landing-item" style="grid-area: item1">
+        <h1>We've got you Covered.</h1>
+        <p>
+          Together we keep each other safe at home or at work. By paying a tiny
+          fee a day, you are fully insured all day long. You get it all for as
+          little as <span>$0.4 per pay.</span>
+        </p>
+        <button>Join now</button>
+        <img class="family" src="img/family.png" alt="family img" />
+      </article>
+
+      <!-- 2 -->
+      <section class="landing-item" style="grid-area: item2">
+        <p>What do we have to offer?</p>
+        <h1>Learn more</h1>
+      </section>
+
+      <!-- 3 -->
+      <section class="landing-item" style="grid-area: item3">
+        <p>What are you waiting for?</p>
+        <h1>Join today</h1>
+      </section>
+    </header>
 
     <!--NAVBAR GRID 2-->
     <nav class="navbar">
-      <ul>
-        <li>home</li>
-        <li>our offer</li>
-        <li>why us</li>
-        <li>contact</li>
-      </ul>
+      <a href="">Home</a>
+      <a href="">Our Offer</a>
+      <a href="">Why Us</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
     <!-- JOIN, TESTIMONIALS & ABOUT -->
+
+    <!--
+
+      KLISTRA IN <MAIN> HÄR
+
     <section class="join-about">
       <div class="testimonals">
         <div class="testimonial-1">
@@ -42,21 +69,40 @@
         </div>
       </div>
     </section>
+    -->
 
     <!-- HOW IT WORKS / 6 SPLIT GRID -->
-    <section class="howitworks-grid">
-      <div>how it works</div>
-      <div>one</div>
-      <div>two</div>
-      <div>three</div>
-      <div>four</div>
-      <div>five</div>
+    <section class="how-grid">
+      <div class="how-item">
+        <h2>How It works?</h2>
+      </div>
+      <div class="how-item">
+        <h2>01</h2>
+        <p>Answer a few questions about yourself</p>
+      </div>
+      <div class="how-item">
+        <h2>02</h2>
+        <p>Choose a plan. Get a quote.</p>
+      </div>
+      <div class="how-item">
+        <h2>03</h2>
+        <p>Answer some questions about your medical history.</p>
+      </div>
+      <div class="how-item">
+        <h2>04</h2>
+        <p>Wait 90 sec to get approved.</p>
+      </div>
+      <div class="how-item">
+        <h2>05</h2>
+        <p>Done!</p>
+      </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
-      <nav class="nav-link-up">take me up again</nav>
-      <div>grey</div>
-    </footer>
+
+    <nav class="nav-footer">
+      <a href="">take me up again</a>
+    </nav>
+    <footer></footer>
   </body>
 </html>

@@ -4,12 +4,158 @@
   padding: 0;
 }
 
-.landing-page {
-  display: grid;
+body {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ebebeb;
 }
+
+/* ----- HEADER ----- */
+
+span {
+  color: #ffffff;
+}
+
+.header-landing {
+  width: auto;
+  height: 500px;
+  display: grid;
+  grid-template-areas:
+    "item1 item2"
+    "item1 item3";
+  grid-template-columns: 1fr 1fr;
+}
+
+.header-landing > :nth-child(3n + 1) {
+  background-color: #c7ddea;
+}
+
+.header-landing > :nth-child(3n + 2) {
+  background-color: #f17949;
+}
+
+.header-landing > :nth-child(3n) {
+  background-color: #ffb939;
+}
+
+.landing-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border: solid 1px red; */
+}
+
+.landing-item h1 {
+  font-size: 2.8rem;
+  max-width: 19.62rem;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+.landing-item p {
+  max-width: 16.75rem;
+  font-size: 0.8rem;
+  font-family: "Fira Sans", sans-serif;
+}
+
+button {
+  background-color: #ffffff;
+  border-radius: 6.25rem;
+  border: none;
+  width: 6.3rem;
+  height: 2.43rem;
+  /* padding: 0.5rem; */
+  font-size: 0.6rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  box-shadow: 2px 2px rgb(189, 189, 189);
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 120px;
+  right: 300px;
+}
+
+.family {
+  width: 286px;
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+}
+
+/* ---- NAVBAR LANDINGPAGE ----- */
 
 .navbar {
   display: grid;
-  grid-template-rows: 4;
-  grid-template-columns: 4;
+  width: auto;
+  height: 30px;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #ebebeb;
+  /* border: solid 1px blue; */
+}
+
+a {
+  color: #00000070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px grey;
+  text-decoration: none;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.75rem;
+}
+
+/* HOW IT WORKS / 6 SPLIT GRID */
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: auto;
+  height: 680px;
+}
+
+.how-item {
+  height: 340px;
+  width: 334px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-item h2 {
+  font-size: 2.8rem;
+  max-width: 314px;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 900;
+}
+
+.how-item p {
+  max-width: 257px;
+  height: 113px;
+  font-size: 0.8rem;
+  font-family: "Fira Sans", sans-serif;
+}
+
+/* FOOTER */
+
+footer {
+  background: #777574;
+  height: 200px;
+}
+
+.nav-footer {
+  background: #a9a19e;
+  height: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: solid 1px red; */
+}
+
+.nav-footer a {
+  border: none;
 }
