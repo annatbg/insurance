@@ -68,7 +68,7 @@ span {
   color: #00000080;
 }
 
-button {
+.button-header {
   background-color: #ffffff;
   border-radius: 6.25rem;
   border: none;
@@ -130,6 +130,133 @@ a {
   font-family: "Fira Sans", sans-serif;
   font-size: 0.75rem;
   cursor: pointer;
+}
+
+/* MAIN - TESTIMONIALS */
+
+/*--------------main--------------*/
+main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.content {
+  grid-column: span 6;
+  margin: 0;
+  position: relative;
+}
+
+/*-----------main-top-----------*/
+.main-top {
+  display: flex;
+  background-color: #a9a19e;
+}
+
+.main-top h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 2.81rem;
+}
+
+.main-top section {
+  width: 50%;
+  padding: 5rem;
+}
+
+.main-top p {
+  padding-top: 2rem;
+}
+
+/*-----------main-cards-----------*/
+.main-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: linear-gradient(#a9a19e 50%, #fab131 50%);
+}
+
+.main-cards .card {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.main-cards .card figure {
+  width: 90%;
+  height: 9.3rem;
+  margin-top: -1rem;
+}
+
+.main-cards .card p {
+  padding: 0 2rem 1.5rem;
+  font-size: 0.7rem;
+  text-align: center;
+  font: 700 11px/18px "Fira Sans", sans-serif;
+}
+
+.main-cards .card:nth-child(1) figure {
+  background-color: #c7ddea;
+  background-image: url(bilder/child.png);
+  background-position: center 1rem;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.main-cards .card:nth-child(2) figure {
+  background-color: #fab131;
+  background-image: url(bilder/adult.png);
+  background-position: center 1rem;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.main-cards .card:nth-child(3) figure {
+  background-color: #f17949;
+  background-image: url(bilder/old.png);
+  background-position: center 1rem;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+/*-----------main-button------------*/
+
+.button-main {
+  background-color: #ffffff;
+  border-radius: 6.25rem;
+  border: none;
+  width: 6.3rem;
+  height: 2.43rem;
+  font-size: 0.6rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  box-shadow: 2px 2px rgb(189, 189, 189);
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  top: 260px;
+}
+
+/*-----------main-about------------*/
+.main-about {
+  background-color: #fab131;
+  padding: 2rem 12rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*----------text-opacity------------*/
+
+.opacity-text-60 {
+  opacity: 60%;
+}
+
+.opacity-text-55 {
+  opacity: 55%;
 }
 
 /* HOW IT WORKS / 6 SPLIT GRID */
