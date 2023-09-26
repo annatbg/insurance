@@ -199,7 +199,7 @@ main {
 
 .main-cards .card:nth-child(1) figure {
   background-color: #c7ddea;
-  background-image: url(bilder/child.png);
+  background-image: url(img/child.png);
   background-position: center 1rem;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -207,7 +207,7 @@ main {
 
 .main-cards .card:nth-child(2) figure {
   background-color: #fab131;
-  background-image: url(bilder/adult.png);
+  background-image: url(img/adult.png);
   background-position: center 1rem;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -215,7 +215,7 @@ main {
 
 .main-cards .card:nth-child(3) figure {
   background-color: #f17949;
-  background-image: url(bilder/old.png);
+  background-image: url(img/old.png);
   background-position: center 1rem;
   background-repeat: no-repeat;
   background-size: 60%;
