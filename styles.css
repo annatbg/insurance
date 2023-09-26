@@ -51,12 +51,21 @@ span {
   font-size: 2.8rem;
   max-width: 19.62rem;
   font-family: "Frank Ruhl Libre", serif;
+  position: absolute;
+  top: 50px;
+  left: 80px;
 }
 
-.landing-item p {
+.landing-paragraph {
   max-width: 16.75rem;
   font-size: 0.8rem;
   font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  position: absolute;
+  top: 170px;
+  left: 80px;
+  color: #00000080;
 }
 
 button {
@@ -65,22 +74,38 @@ button {
   border: none;
   width: 6.3rem;
   height: 2.43rem;
-  /* padding: 0.5rem; */
   font-size: 0.6rem;
   font-family: "Fira Sans", sans-serif;
   font-weight: 700;
   box-shadow: 2px 2px rgb(189, 189, 189);
   text-transform: uppercase;
   position: absolute;
-  bottom: 120px;
-  right: 300px;
+  top: 300px;
+  left: 80px;
+  cursor: pointer;
 }
 
 .family {
   width: 286px;
+  height: 279px;
   position: absolute;
   bottom: 0;
   left: 200px;
+}
+
+.landing-item p {
+  max-width: 16.75rem;
+  font-size: 0.8rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  color: #00000050;
+}
+
+.landing-item h2 {
+  font-size: 2.8rem;
+  max-width: 19.62rem;
+  color: #ffffff;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
 /* ---- NAVBAR LANDINGPAGE ----- */
@@ -104,6 +129,7 @@ a {
   text-decoration: none;
   font-family: "Fira Sans", sans-serif;
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 /* HOW IT WORKS / 6 SPLIT GRID */
@@ -123,20 +149,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.how-item h2 {
-  font-size: 2.8rem;
-  max-width: 314px;
-  font-family: "Frank Ruhl Libre", serif;
-  font-weight: 900;
-}
-
-.how-item p {
-  max-width: 257px;
-  height: 113px;
-  font-size: 0.8rem;
-  font-family: "Fira Sans", sans-serif;
+  position: relative;
 }
 
 #how-item-1 {
@@ -163,6 +176,35 @@ a {
   background: #ffffff;
 }
 
+.how-item h1 {
+  font-size: 2.8rem;
+  max-width: 314px;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 900;
+  color: #00000080;
+}
+
+.how-item h2 {
+  font-size: 2.18rem;
+  max-width: 314px;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 900;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #00000040;
+}
+
+.how-item p {
+  max-width: 16.06rem;
+  max-height: 7.06rem;
+  font-size: 1.06rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  color: #00000070;
+  /* border: solid 1px blue; */
+}
+
 /* FOOTER */
 
 footer {
@@ -172,7 +214,7 @@ footer {
 
 .nav-footer {
   background: #a9a19e;
-  height: 68px;
+  height: 75px; /* ändrade höjden trots att skissen säger 68px pga reasons */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,6 +222,18 @@ footer {
   /* border: solid 1px red; */
 }
 
+.chevron {
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
 .nav-footer a {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.06rem;
+  /* margin-top: 0; */
+  padding-bottom: 40px;
   border: none;
+  color: #00000070;
+  /* border: solid 1px blue; */
 }
