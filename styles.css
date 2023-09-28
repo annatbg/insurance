@@ -114,10 +114,22 @@ span {
   display: grid;
   width: auto;
   height: 68px;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   background-color: #ebebeb;
   /* border: solid 1px blue; */
+}
+
+.navbar a:nth-child(1) {
+  grid-column: 2;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 12px/12px "Fira Sans", sans-serif;
 }
 
 a {
@@ -131,6 +143,23 @@ a {
   font-size: 0.75rem;
   cursor: pointer;
 }
+
+/* 
+nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 4rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 12px/12px 'Fira Sans', sans-serif;
+}
+*/
 
 /* MAIN - TESTIMONIALS */
 
@@ -401,4 +430,148 @@ footer h2 {
   border: none;
   color: #00000070;
   /* border: solid 1px blue; */
+}
+
+/* CONTACT PAGE */
+
+/*------------------nav--------------------*/
+nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 4rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 12px/12px "Fira Sans", sans-serif;
+}
+
+/* nav a:hover {
+  background-color: #ccc;
+} */
+
+nav a:nth-child(1) {
+  grid-column: 2;
+}
+
+/*------------------contact-header---------------*/
+.header2 {
+  background-color: #c7ddea;
+  background-image: url(img/man-and-child.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom -1rem right 8rem;
+}
+
+.header2 h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  grid-column: span 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+  margin: 0;
+}
+
+/*--------------whats-on-ur-mind-----------------*/
+.content2 {
+  grid-column: span 6;
+  margin: 0;
+  padding: 7rem 10rem 4rem 5rem;
+  display: flex;
+  background-color: #a9a19e;
+}
+
+.content2 h1 {
+  width: 50%;
+  margin: 0;
+}
+
+.content2 form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.content2 button {
+  align-self: flex-end;
+}
+
+.content2 form p {
+  margin: 0;
+}
+
+.content2 #text1 {
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.content2 #textarea1 {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font: 400 14px/14px "Fira Sans", sans-serif;
+}
+
+/*------------------map---------------------*/
+.content3 {
+  background: no-repeat 50% 50%/5% url(img/needle.png),
+    no-repeat 100% / cover url(img/map-contact.png);
+  width: 100%;
+  height: 26rem;
+  grid-column: span 6;
+}
+
+.content3 section {
+  height: 12rem;
+  width: 33%;
+  background-color: #fab131;
+  color: white;
+  padding: 1rem;
+  margin: 2rem 3rem;
+}
+
+.content3 section h1 {
+  margin: 0.1rem 0.8rem;
+}
+
+.content3 section address {
+  margin: 0.1rem 0.8rem;
+  padding-top: 0.4rem;
+}
+
+/*-------------------footer----------------------*/
+footer {
+  width: auto;
+  height: 15rem;
+  background-color: #777574;
+}
+
+/*------------------font/opacity---------------------*/
+
+.opacity-text-50 {
+  opacity: 50%;
+  font: 700 14px/24px "Fira Sans";
+}
+
+.opacity-text-60 {
+  opacity: 60%;
+}
+
+.opacity-text-90 {
+  opacity: 90%;
+  font-family: "Fira Sans";
+}
+
+.current {
+  font: 700 14px/24px "Fira Sans";
+}
+
+address {
+  font: 500 14px/24px "Fira Sans";
+  font-style: normal;
 }

@@ -1,3 +1,13 @@
+# insurance company page
+
+Page for an insurance company using html and css.
+Layout of page built using grid.
+Content positioned using flexbox
+
+# contributors
+
+Anna Thunberg and Robin Gustafsson.
+
 # see it live
 
 https://annathunberg.github.io/insurance/
